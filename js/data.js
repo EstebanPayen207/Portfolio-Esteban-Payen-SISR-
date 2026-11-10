@@ -394,9 +394,7 @@ const PROJECTS_DATA = [
       "Diagnostic Réseau"
     ],
     docUrl: "assets/docs/stages/EP_CR_Hotline.docx",
-    secondDocUrl: "assets/docs/stages/E5_PAYEN_ESTEBAN_CR_STAGE1.docx",
     docLabel: "Dossier Hotline (.docx)",
-    secondDocLabel: "Rapport Stage (.docx)",
     isPlaceholder: false,
     details: {
       objectifs: [

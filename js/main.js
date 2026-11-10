@@ -263,12 +263,6 @@ function initModalSystem() {
       }
     }
 
-    const attestBtn = e.target.closest("[data-open-attestation]");
-    if (attestBtn) {
-      e.preventDefault();
-      openAttestationModal(modalBody, backdrop);
-    }
-
     const legalBtn = e.target.closest("[data-open-legal]");
     if (legalBtn) {
       e.preventDefault();
@@ -320,29 +314,6 @@ function openProjectModal(proj, modalBody, backdrop) {
     ${docActions}
   `;
 
-  backdrop.classList.add("open");
-  backdrop.setAttribute("aria-hidden", "false");
-}
-
-function openAttestationModal(modalBody, backdrop) {
-  modalBody.innerHTML = `
-    <span class="project-cat-badge cat-stage">Document Officiel BTS SIO</span>
-    <h3 style="margin-top:0.65rem;">Attestation de Stage 1re année — FCC Informatique / Buro24</h3>
-    <p style="margin-bottom:1rem;">
-      Stage effectué du <strong>11/05/2026 au 12/06/2026 (6 semaines)</strong> au sein de <strong>FCC Informatique / Buro24</strong> (Rue du Prayon, 57685 Augny) — Tuteur : <strong>Jérémy DIETRICH</strong>.
-    </p>
-    <div style="border-radius:10px; overflow:hidden; border:1px solid var(--border-subtle); background:#05070b;">
-      <img src="assets/img/attestation-stage-1.jpg" alt="Attestation de stage BTS SIO Esteban Payen chez FCC Informatique Augny" style="width:100%; max-height:520px; object-fit:contain; margin:0 auto;" />
-    </div>
-    <div style="margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
-      <a href="assets/img/attestation-stage-1.jpg" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-        Ouvrir l'attestation en plein écran ↗
-      </a>
-      <a href="assets/docs/stages/E5_PAYEN_ESTEBAN_CR_STAGE1.docx" download class="btn btn-emerald btn-sm">
-        Télécharger le rapport de stage complet (.docx) ⬇
-      </a>
-    </div>
-  `;
   backdrop.classList.add("open");
   backdrop.setAttribute("aria-hidden", "false");
 }
