@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esteban PAYEN — Portfolio BTS SIO SISR | Systèmes, Réseaux &amp; Infrastructure</title>
+  <meta name="description" content="Portfolio officiel d'Esteban PAYEN, étudiant en BTS SIO option SISR au Lycée Robert Schuman (Metz). Projets d'infrastructure Cisco/HP, Windows Server 2016/2025, Active Directory, Hyper-V, OCS/GLPI, Stage Buro24 / FCC Informatique et Veille Technologique." />
+
+  <!-- Polices Google Fonts : Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Halos lumineux d'arrière-plan -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. BARRE DE NAVIGATION FIXE (NAVBAR)
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#accueil" class="nav-brand" aria-label="Retour à l'accueil">
+        <div class="brand-badge">EP</div>
+        <div class="brand-text">
+          Esteban PAYEN
+          <span>BTS SIO // SISR</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#apropos" class="nav-link">À propos &amp; Parcours</a>
+        <a href="#bts-sio" class="nav-link">BTS SIO &amp; E4/E5</a>
+        <a href="#projets" class="nav-link">Projets &amp; Réalisations</a>
+        <a href="#stages" class="nav-link">Stages &amp; Expériences</a>
+        <a href="#veille" class="nav-link nav-link-veille">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Veille Technologique
+        </a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         A. HERO SECTION (ACCUEIL)
+         ====================================================================== -->
+    <section class="hero" id="accueil">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>BTS SIO SISR • Lycée Robert Schuman (Metz) • Session 2027</span>
+            </div>
+
+            <h1 class="hero-title">Esteban PAYEN</h1>
+
+            <p class="hero-role">
+              <span>Étudiant en BTS SIO – Option SISR</span>
+              <span class="mono" style="font-size:0.9rem; color:var(--accent-emerald);">
+                (Solutions d'Infrastructure, Systèmes et Réseaux)
+              </span>
+            </p>
+
+            <p class="hero-description">
+              Dynamique, polyvalent et rapidement opérationnel, je me spécialise dans le déploiement et l'administration de serveurs
+              <strong>Windows Server (2016 / 2025) &amp; Active Directory</strong>, la virtualisation <strong>Hyper-V</strong>,
+              la gestion de parc <strong>OCS Inventory / GLPI / RMM</strong> et les infrastructures réseaux commutées et routées
+              <strong>Cisco &amp; HP ProCurve</strong>.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projets" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                Voir mes projets (14)
+              </a>
+              <a href="assets/docs/CV-Esteban-Payen.pdf" target="_blank" rel="noopener" download="CV-Esteban-Payen.pdf" class="btn btn-emerald">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Télécharger mon CV (PDF)
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Me contacter
+              </a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="metric-value">Win Server 2025</span>
+                <span class="metric-label">AD DS, RAID 5, Hyper-V &amp; M365</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">Cisco &amp; HP L2/L3</span>
+                <span class="metric-label">VLAN 802.1Q, STP, LACP, HSRP, ACL</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">OCS / GLPI / RMM</span>
+                <span class="metric-label">Gestion de parc, Hotline &amp; BitLocker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : Carte Portrait Photo + Terminal SysAdmin -->
+          <div class="hero-Visual-stack">
+            <div class="profile-showcase">
+              <div class="profile-avatar-wrap">
+                <img src="assets/img/esteban-portrait.jpg" alt="Portrait d'Esteban PAYEN — Étudiant BTS SIO SISR" class="profile-avatar" />
+                <span class="profile-badge-online" title="Disponible pour stage SISR"></span>
+              </div>
+              <div class="profile-meta">
+                <h2>Esteban PAYEN</h2>
+                <span class="role-tag">SysAdmin &amp; Network Student • Metz / Vernéville (57)</span>
+                <div class="profile-quick-info">
+                  <span class="profile-chip">🚗 Permis B</span>
+                  <span class="profile-chip">🩺 Certifié SST</span>
+                  <span class="profile-chip">🇬🇧 Anglais B1/B2</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal SysAdmin visuel avec vraies données -->
+            <div class="terminal-card" aria-label="Aperçu console SysAdmin">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <span class="terminal-title">pwsh — Administrateur@EP_W2016_Base (10.99.3.181)</span>
+                <span class="mono" style="font-size:0.72rem; color:var(--accent-emerald);">ONLINE</span>
+              </div>
+              <div class="terminal-body">
+                <div class="cmd-line">
+                  <span class="cmd-prompt">PS C:\Users\EstebanPayen&gt;</span>
+                  <span class="cmd-command"> Get-SISRPortfolio -Candidate "Esteban PAYEN"</span>
+                </div>
+                <div class="cmd-output">
+                  <div><span class="key">Établissement :</span> Lycée Robert Schuman (Metz) — Salle 6232</div>
+                  <div><span class="key">Baccalauréat  :</span> Bac Pro SN option RISC — Section Européenne (Mention Bien)</div>
+                  <div><span class="key">Stage BTS 1   :</span> Buro24 / FCC Informatique (Augny) — 6 semaines</div>
+                  <div><span class="key">Contact       :</span> 06 65 64 85 28 | esteban.payen57@gmail.com</div>
+                </div>
+
+                <div class="cmd-line">
+                  <span class="cmd-prompt">PS C:\Users\EstebanPayen&gt;</span>
+                  <span class="cmd-command"> Test-RealisationsE5 -Status</span>
+                </div>
+                <div class="cmd-output">
+                  <div>✔ <span class="val-ok">[OK]</span> Switchs S32 Cisco SG300-10 &amp; S34 HP 2620-24 (VLAN 10..50, 99)</div>
+                  <div>✔ <span class="val-ok">[OK]</span> Serveur HP ProLiant RAID 5 (Windows Server 2025 &amp; iLO/SPP)</div>
+                  <div>✔ <span class="val-ok">[OK]</span> Inventaire OCS/GLPI, Domaine AD Ecole.eni &amp; Maquette Sylvia</div>
+                </div>
+
+                <div class="cmd-line" style="margin-bottom:0;">
+                  <span class="cmd-prompt">PS C:\Users\EstebanPayen&gt;</span>
+                  <span class="cmd-command"> ./Show-TableauSyntheseE4.ps1 --Session 2027</span>
+                  <span class="cursor-blink"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         B. À PROPOS & PARCOURS (PROFIL CV, TIMELINE FORMATION & COMPÉTENCES)
+         ====================================================================== -->
+    <section class="section section-alt" id="apropos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>01 // Profil, Parcours &amp; Compétences</span>
+          </div>
+          <h2 class="section-title">À propos &amp; <span class="gradient-text">Parcours académique</span></h2>
+          <p class="section-subtitle">
+            Profil synchronisé avec mon Curriculum Vitae officiel : formation technique en systèmes et réseaux, expériences internationales et rigueur acquise sur le terrain.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <!-- Présentation complète synchronisée avec le CV -->
+          <div class="glass-card about-text">
+            <div class="about-photo-banner">
+              <img src="assets/img/esteban-portrait.jpg" alt="Photo d'Esteban PAYEN" />
+              <div>
+                <h3 style="font-size:1.22rem; font-weight:700; color:var(--text-primary);">Esteban PAYEN</h3>
+                <p style="font-size:0.86rem; color:var(--accent-cyan); margin:0;">
+                  Né le 27/05/2007 • 18 Grand Rue, 57130 Vernéville
+                </p>
+                <span class="mono" style="font-size:0.76rem; color:var(--accent-emerald);">
+                  Titulaire du Permis B (Fév. 2025) • Certifié SST &amp; BAFA Base (2026)
+                </span>
+              </div>
+            </div>
+
+            <p>
+              <strong>Dynamique, polyvalent et rapidement opérationnel</strong>, je prépare actuellement mon
+              <strong>BTS SIO option SISR</strong> au Lycée Robert Schuman à Metz. Mon objectif est de contribuer efficacement aux besoins d'infrastructure, de support et d'administration système d'une entreprise tout en approfondissant mon expérience professionnelle.
+            </p>
+            <p>
+              Jeune responsable, passionné de sport et doté d'un <strong>fort esprit d'équipe acquis grâce à 10 ans de pratique du football en club</strong>, j'ai également développé une grande capacité d'adaptation à travers des <strong>séjours et stages à l'étranger (Finlande et Portugal)</strong>.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <span class="label">Téléphone</span>
+                <span class="value">06 65 64 85 28</span>
+              </div>
+              <div class="highlight-box">
+                <span class="label">Email direct</span>
+                <span class="value" style="font-size:0.84rem;">esteban.payen57@gmail.com</span>
+              </div>
+              <div class="highlight-box">
+                <span class="label">Langues</span>
+                <span class="value">Français (Natif) • Anglais (Intermédiaire)</span>
+              </div>
+              <div class="highlight-box">
+                <span class="label">Ouverture internationale</span>
+                <span class="value">Séjours Finlande &amp; Portugal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frise chronologique (Formation & Certifications du CV) -->
+          <div class="glass-card">
+            <h3 class="card-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Formation &amp; Certifications
+            </h3>
+
+            <div class="timeline">
+              <!-- En cours : BTS SIO SISR -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <span class="timeline-badge badge-current">2025 – 2027 (En cours)</span>
+                <h4 class="timeline-title">BTS SIO – Option SISR</h4>
+                <div class="timeline-school">Lycée Robert Schuman — Metz</div>
+                <p class="timeline-desc">
+                  Solutions d'Infrastructure, Systèmes et Réseaux : administration Windows Server 2016/2025, Active Directory, virtualisation Hyper-V, gestion de parc OCS/GLPI, commutation/routage Cisco &amp; HP (VLAN, STP, LACP, HSRP, ACL).
+                </p>
+              </div>
+
+              <!-- 2026 : Stage BAFA Base -->
+              <div class="timeline-item completed">
+                <div class="timeline-marker"></div>
+                <span class="timeline-badge badge-obtained">2026 • Certification</span>
+                <h4 class="timeline-title">Stage BAFA Base &amp; Sauveteur Secouriste du Travail (SST)</h4>
+                <div class="timeline-school">Encadrement, responsabilité &amp; premiers secours</div>
+                <p class="timeline-desc">
+                  Acquisition des compétences d'animation, de gestion de groupe, de prévention des risques et de secourisme en milieu professionnel.
+                </p>
+              </div>
+
+              <!-- 2022 - 2025 : Bac Pro SN RISC -->
+              <div class="timeline-item completed">
+                <div class="timeline-marker"></div>
+                <span class="timeline-badge badge-obtained">2022 – 2025 • Mention Bien</span>
+                <h4 class="timeline-title">Bac Pro Systèmes Numériques (SN) – Option RISC (Section Européenne)</h4>
+                <div class="timeline-school">Lycée Louis de Cormontaigne — Metz</div>
+                <p class="timeline-desc">
+                  Réseaux Informatiques et Systèmes Communicants avec <strong>Option Européenne</strong> et obtention avec <strong>Mention Bien</strong>. Permis B obtenu en février 2025.
+                </p>
+              </div>
+
+              <!-- 2022 : Brevet -->
+              <div class="timeline-item completed">
+                <div class="timeline-marker"></div>
+                <span class="timeline-badge badge-obtained">2022 • Mention Assez Bien</span>
+                <h4 class="timeline-title">Diplôme National du Brevet des Collèges</h4>
+                <div class="timeline-school">Mention Assez Bien</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétences techniques & humaines sous forme de badges -->
+        <div class="skills-grid">
+          <!-- Catégorie 1 : Systèmes, Serveurs & Parc -->
+          <div class="skill-category">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Systèmes, Serveurs &amp; Parc</h3>
+                <span class="mono" style="font-size:0.74rem; color:var(--text-muted);">Administration &amp; Déploiement</span>
+              </div>
+            </div>
+            <div class="skill-badges">
+              <span class="tech-badge">🪟 Windows Server 2016 / 2025</span>
+              <span class="tech-badge">🗂️ Active Directory (AD DS, OU, Groupes)</span>
+              <span class="tech-badge">☁️ Microsoft 365 Admin &amp; Exchange Online</span>
+              <span class="tech-badge">🖥️ Virtualisation Hyper-V (vSwitch, VHDX)</span>
+              <span class="tech-badge">📊 OCS Inventory NG &amp; GLPI (Ticketing/Parc)</span>
+              <span class="tech-badge">📡 Supervision RMM &amp; TeamViewer QS</span>
+              <span class="tech-badge">🔒 Chiffrement BitLocker &amp; TPM 2.0</span>
+              <span class="tech-badge">💻 Scripting PowerShell &amp; Partages NTFS</span>
+              <span class="tech-badge">🐧 Linux &amp; Conteneurs Docker</span>
+            </div>
+          </div>
+
+          <!-- Catégorie 2 : Réseaux & Sécurité -->
+          <div class="skill-category">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Réseaux &amp; Infrastructure</h3>
+                <span class="mono" style="font-size:0.74rem; color:var(--text-muted);">Cisco, HP ProCurve &amp; Pare-feu</span>
+              </div>
+            </div>
+            <div class="skill-badges">
+              <span class="tech-badge">🌐 Switchs Cisco SG300-10 &amp; SF350</span>
+              <span class="tech-badge">🔀 Switchs HP ProCurve 2620-24</span>
+              <span class="tech-badge">🏷️ VLANs &amp; Trunk IEEE 802.1Q / 802.1p</span>
+              <span class="tech-badge">🧭 Routage Inter-VLAN (Router-on-a-Stick)</span>
+              <span class="tech-badge">🔄 STP, Agrégation LACP, HSRP &amp; RIP</span>
+              <span class="tech-badge">🛡️ Listes de contrôle d'accès (ACL) &amp; DMZ</span>
+              <span class="tech-badge">🔥 Pare-feu OPNsense (Sophos) &amp; VPN</span>
+              <span class="tech-badge">📡 Services DNS, DHCP, SSH, TFTP &amp; Proxy</span>
+            </div>
+          </div>
+
+          <!-- Catégorie 3 : Hardware, Serveurs Physiques & Savoir-être CV -->
+          <div class="skill-category">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Hardware &amp; Qualités Pro</h3>
+                <span class="mono" style="font-size:0.74rem; color:var(--text-muted);">Serveurs Physiques &amp; Savoir-être</span>
+              </div>
+            </div>
+            <div class="skill-badges">
+              <span class="tech-badge">🗄️ Serveurs HP ProLiant (iLO, SPP, Smart Array)</span>
+              <span class="tech-badge">💾 Grappes matérielles RAID 0 / RAID 1 / RAID 5</span>
+              <span class="tech-badge">🖨️ Imprimantes multifonctions (MF259, AirPrint, Scan-to-Mail)</span>
+              <span class="tech-badge">🛠️ Diagnostic matériel PC, NAS &amp; Montage</span>
+              <span class="tech-badge">🤝 Travail d'équipe &amp; Discipline (Football 10 ans)</span>
+              <span class="tech-badge">🎯 Sens des responsabilités &amp; Adaptabilité</span>
+              <span class="tech-badge">💬 Patience, bienveillance &amp; Pédagogie Hotline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         C. SECTION BTS SIO & ÉPREUVES E4 / E5
+         ====================================================================== -->
+    <section class="section" id="bts-sio">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>02 // Référentiel BTS SIO — Bloc 1 &amp; Épreuves E4 / E5</span>
+          </div>
+          <h2 class="section-title">Le BTS SIO &amp; mon <span class="gradient-text">Portefeuille de compétences</span></h2>
+          <p class="section-subtitle">
+            Présentation de l'option SISR et accès direct à mon Tableau de synthèse officiel ainsi qu'à mon dossier de justification des compétences.
+          </p>
+        </div>
+
+        <div class="bts-overview">
+          <!-- Focus Spécialité SISR -->
+          <div class="option-card sisr-focus">
+            <span class="option-pill">MA SPÉCIALITÉ • OPTION SISR</span>
+            <h3 style="font-size:1.35rem; margin-bottom:0.65rem;">
+              Solutions d'Infrastructure, Systèmes et Réseaux
+            </h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">
+              L'option <strong>SISR</strong> forme des spécialistes capables d'installer, configurer, sécuriser et maintenir les équipements réseaux et les serveurs d'une organisation tout en assurant un support réactif aux utilisateurs (selon les bonnes pratiques ITIL).
+            </p>
+            <ul class="check-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Administration de serveurs physiques (<strong>HP ProLiant RAID 5</strong>) et virtuels (<strong>Hyper-V, Windows Server 2016/2025, AD DS, DNS, DHCP</strong>).</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Conception d'infrastructures commutées et routées (<strong>Cisco SG300, HP 2620, VLAN 802.1Q, STP, LACP, HSRP, RIP, ACL, DMZ</strong>).</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Gestion du patrimoine informatique et support utilisateur (<strong>OCS Inventory, GLPI, RMM, Hotline 3 niveaux, Microsoft 365</strong>).</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Les 6 compétences du Bloc 1 évaluées -->
+          <div class="option-card">
+            <span class="option-pill" style="color:var(--accent-cyan); background:rgba(14,165,233,0.1); border-color:rgba(14,165,233,0.3);">
+              BLOC 1 • SUPPORT ET MISE À DISPOSITION DE SERVICES
+            </span>
+            <h3 style="font-size:1.25rem; margin-bottom:0.65rem;">
+              Les 6 domaines de compétences validés dans mon dossier
+            </h3>
+            <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:0.85rem;">
+              Conformément au référentiel national, mes réalisations en formation et en stage couvrent l'ensemble des compétences attendues :
+            </p>
+            <ul class="check-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>1. Gérer le patrimoine informatique :</strong> Inventaire manuel &amp; OCS/GLPI, normes HP SPP/iLO, RAID 5, sauvegardes VHDX &amp; TFTP.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>2. Répondre aux incidents et demandes d'assistance :</strong> Hotline Buro24/FCC (Support immédiat, Régulation, Traitement), TeamViewer, tickets GLPI.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>3. Développer la présence en ligne :</strong> Portfolio numérique BTS SIO, référencement web et qualité de service hotline.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>4. Travailler en mode projet &amp; 5. Mettre à disposition un service :</strong> Déploiement de l'infrastructure Projet 21, serveurs, imprimantes MF259 et postes BitLocker.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>6. Organiser son développement professionnel :</strong> Environnement d'apprentissage (Poste SIO6232_P2) et veille technologique.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bannière Tableau de Synthèse Officiel & Justification des compétences -->
+        <div class="e4-banner">
+          <div class="e4-info">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              Tableau de Synthèse officiel &amp; Justification des compétences (Session 2027)
+            </h3>
+            <p>
+              Consultez en ligne mon tableau de synthèse complet (12 réalisations en formation + 4 réalisations en stage de 1re année) ou téléchargez directement les fichiers officiels `.xlsx` et `.docx`.
+            </p>
+          </div>
+          <div class="e4-actions">
+            <a href="assets/docs/Tableau-Synthese-E4-Esteban-PAYEN.html" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              Voir le Tableau de synthèse interactif ↗
+            </a>
+            <a href="assets/docs/E5_PAYEN_ESTEBAN_tableau_de_synthese.xlsx" download class="btn btn-emerald btn-sm">
+              Télécharger le Tableau (.xlsx) ⬇
+            </a>
+            <a href="assets/docs/EP_justification_des_competences.docx" download class="btn btn-outline btn-sm">
+              Justification des compétences (.docx) ⬇
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         E. PROJETS & RÉALISATIONS (VRAIES RÉALISATIONS FORMATION & STAGE)
+         ====================================================================== -->
+    <section class="section section-alt" id="projets">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>03 // Dossier Technique E4 / E5</span>
+          </div>
+          <h2 class="section-title">Mes Projets &amp; <span class="gradient-text">Réalisations techniques</span></h2>
+          <p class="section-subtitle">
+            Retrouvez ci-dessous l'intégralité de mes projets réalisés au Lycée Robert Schuman (Metz) et de mes missions techniques en entreprise, avec leurs comptes-rendus téléchargeables.
+          </p>
+        </div>
+
+        <!-- Barre de filtres dynamiques -->
+        <div class="filter-bar" role="tablist" aria-label="Filtrer les projets par catégorie">
+          <button type="button" class="filter-btn active" data-filter="all">Toutes les réalisations (12)</button>
+          <button type="button" class="filter-btn" data-filter="reseau">Réseau, VLAN &amp; Infra (5)</button>
+          <button type="button" class="filter-btn" data-filter="systeme">Système, AD, VM &amp; Parc (3)</button>
+          <button type="button" class="filter-btn" data-filter="stage">Missions Stage Buro24 / FCC (4)</button>
+        </div>
+
+        <!-- Grille générée dynamiquement depuis js/data.js -->
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         D. EXPÉRIENCES & STAGES (SYNCHRONISÉS AVEC LE CV & LE RAPPORT DE STAGE)
+         ====================================================================== -->
+    <section class="section" id="stages">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>04 // Parcours Professionnel &amp; Stages</span>
+          </div>
+          <h2 class="section-title">Stages &amp; <span class="gradient-text">Expériences professionnelles</span></h2>
+          <p class="section-subtitle">
+            Mon parcours sur le terrain : stages en informatique (BTS SIO et Bac Pro SN), expérience internationale au Portugal et missions en entreprise.
+          </p>
+        </div>
+
+        <div class="stages-grid">
+          <!-- Stage BTS SIO 1re année : Buro24 / FCC Informatique -->
+          <article class="stage-card" style="border-color:rgba(14,165,233,0.45);">
+            <div>
+              <div class="stage-header">
+                <span class="stage-status status-upcoming">✔ Stage BTS SIO 1re année • 11/05 au 12/06/2026 (6 sem.)</span>
+                <h3 class="stage-company">Buro24 / FCC Informatique (Metz-Augny)</h3>
+                <div class="stage-role">Technicien Systèmes, Réseaux &amp; Hotline • Tuteur : Jérémy DIETRICH</div>
+              </div>
+              <ul class="stage-missions">
+                <li><strong>Hotline &amp; Support :</strong> Prise en charge des appels (Support Immédiat, Régulation, Traitement), télémaintenance TeamViewer, gestion des comptes Active Directory, Microsoft 365 / Exchange Online et ticketing GLPI.</li>
+                <li><strong>Serveur physique :</strong> Préparation d'un serveur HP ProLiant, mise à jour firmwares via HP SPP/iLO, configuration RAID 5 (Smart Array) et déploiement de Windows Server 2025.</li>
+                <li><strong>Déploiement &amp; Réseau :</strong> Masterisation de PC fixes/portables (BitLocker TPM 2.0, jonction domaine AD, agent RMM, VPN), installation d'OPNsense sur boîtier Sophos, mise à jour de NAS et montage/calibration d'imprimantes multifonctions MF259.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="project-tags" style="margin-bottom:1rem;">
+                <span class="project-tag">Windows Server 2025</span>
+                <span class="project-tag">HP ProLiant RAID 5</span>
+                <span class="project-tag">Active Directory / M365</span>
+                <span class="project-tag">GLPI &amp; RMM</span>
+                <span class="project-tag">OPNsense</span>
+              </div>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <button type="button" class="btn btn-primary btn-sm" data-open-attestation="true">
+                  Voir l'Attestation officielle
+                </button>
+                <a href="assets/docs/stages/E5_PAYEN_ESTEBAN_CR_STAGE1.docx" download class="btn btn-emerald btn-sm">
+                  Rapport de stage (.docx) ⬇
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stages Bac Pro : LDLC & PC Solidaire -->
+          <article class="stage-card">
+            <div>
+              <div class="stage-header">
+                <span class="stage-status status-done">✔ Stages Bac Pro SN RISC • 2023 &amp; 2024</span>
+                <h3 class="stage-company">LDLC (2023–2024) &amp; PC Solidaire (2024)</h3>
+                <div class="stage-role">Technicien Gestion, Montage &amp; Réparation d'Ordinateurs</div>
+              </div>
+              <ul class="stage-missions">
+                <li><strong>LDLC (2023 &amp; 2024) :</strong> Gestion d'atelier, montage complet de configurations sur mesure, diagnostic matériel approfondi (RAM, CPU, GPU, alimentation, carte mère) et configuration BIOS/UEFI.</li>
+                <li><strong>PC Solidaire (2024) :</strong> Remise en état et reconditionnement de parcs informatiques, remplacement de composants, installation de systèmes d'exploitation et support aux utilisateurs.</li>
+                <li>Tests de stabilité sous charge, gestion des stocks de pièces détachées et relation client.</li>
+              </ul>
+            </div>
+            <div class="project-tags" style="margin-bottom:0;">
+              <span class="project-tag">Hardware &amp; Montage</span>
+              <span class="project-tag">Diagnostic Pannes</span>
+              <span class="project-tag">BIOS / UEFI</span>
+              <span class="project-tag">Reconditionnement</span>
+            </div>
+          </article>
+
+          <!-- Stage à l'étranger (Portugal) + Jobs d'été & Stage 2e année -->
+          <article class="stage-card upcoming">
+            <div>
+              <div class="stage-header">
+                <span class="stage-status status-upcoming">🌍 International (2025) &amp; Missions (2025–2026)</span>
+                <h3 class="stage-company">ALAMADAMUNDO (Portugal) &amp; Expériences</h3>
+                <div class="stage-role">Stage International IT &amp; Missions Intérimaires</div>
+              </div>
+              <ul class="stage-missions">
+                <li><strong>ALAMADAMUNDO — Portugal (2025) :</strong> Stage à l'étranger axé sur la conception et la création d'un jeu vidéo en équipe internationale (pratique de l'anglais technique et adaptabilité culturelle).</li>
+                <li><strong>Missions intérimaires estivales (2025–2026) :</strong>
+                  <em>Vaglio</em> (2025 — Déménagement, aménagement et mise sous carton),
+                  <em>Omnium</em> (2025 — Manutention et montage de meubles),
+                  <em>Lauer</em> (2025 &amp; 2026 — Manutention).
+                </li>
+                <li><strong>Stage BTS SIO 2e année (18 janv. – 19 fév. 2027) :</strong> Prochaine période d'immersion SISR (accord verbal Buro24 / candidatures grands comptes EDF, Enedis, UEM, JCD).</li>
+              </ul>
+            </div>
+            <div class="project-tags" style="margin-bottom:0;">
+              <span class="project-tag">Mobilité Portugal</span>
+              <span class="project-tag">Création Jeu Vidéo</span>
+              <span class="project-tag">Polyvalence &amp; Rigueur</span>
+              <span class="project-tag">Esprit d'équipe</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         F. ONGLET / SECTION "VEILLE TECHNOLOGIQUE" (SUJET DÉFINITIF WI-FI 7)
+         ====================================================================== -->
+    <section class="section section-alt" id="veille">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>05 // Épreuve BTS SIO — Veille Technologique</span>
+          </div>
+          <h2 class="section-title">Veille <span class="gradient-text">Technologique SISR</span></h2>
+          <p class="section-subtitle">
+            Étude d'impact infrastructure : comment l'adoption de la norme sans fil IEEE 802.11be (Wi-Fi 7) impose une refonte de la couche de commutation filaire et de l'alimentation PoE en entreprise.
+          </p>
+        </div>
+
+        <!-- 1. En-tête de la Veille, Problématique, Introduction, Nuage de Normes & Outils -->
+        <div class="veille-intro-box">
+          <div>
+            <span class="veille-theme-label">Thème principal de veille technologique (BTS SIO SISR)</span>
+            <h3 class="veille-theme-title" id="veille-theme-title">
+              Le déploiement du Wi-Fi 7 (802.11be) et son impact sur le réseau filaire (Switching / PoE)
+            </h3>
+
+            <!-- Encadré visuel Problématique -->
+            <div class="veille-problematique-box">
+              <span class="veille-problematique-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Problématique centrale
+              </span>
+              <p class="veille-problematique-text" id="veille-problematique">
+                « Quels sont les défis techniques et les impacts sur l'infrastructure de commutation filaire liés à l'adoption du Wi-Fi 7 (802.11be) en entreprise ? »
+              </p>
+            </div>
+
+            <!-- Introduction / Angle technique SISR -->
+            <p class="veille-theme-desc" id="veille-theme-alt">
+              L'arrivée du Wi-Fi 7 (norme IEEE 802.11be) ne se résume pas à une simple évolution radio : avec des débits théoriques multipliés (jusqu'à 46 Gbps), des canaux de 320 MHz et l'agrégation simultanée de plusieurs bandes de fréquences (MLO sur 2.4 GHz, 5 GHz et 6 GHz), les bornes d'accès deviennent ultra-exigeantes. Sans un redimensionnement de l'infrastructure filaire en amont — ports switchs Multi-Gigabit (2.5G / 5G / 10G - IEEE 802.3bz), budget d'alimentation PoE+ / PoE++ (IEEE 802.3bt) accru et mise à niveau des liens Uplink vers le cœur de réseau —, le réseau commuté devient un véritable goulot d'étranglement.
+            </p>
+
+            <!-- 2. Nuage de Badges "Mots-clés & Normes Techniques" -->
+            <div class="veille-keywords-wrap">
+              <span class="veille-keywords-title">Mots-clés &amp; Normes Techniques étudiés</span>
+              <div class="veille-keywords-cloud" id="veille-keywords-cloud">
+                <span class="veille-keyword-badge">📡 IEEE 802.11be (Wi-Fi 7)</span>
+                <span class="veille-keyword-badge">📶 Bande 6 GHz</span>
+                <span class="veille-keyword-badge">🔗 MLO (Multi-Link Operation)</span>
+                <span class="veille-keyword-badge">⚡ Canaux 320 MHz &amp; 4K-QAM</span>
+                <span class="veille-keyword-badge">🔀 Switchs Multi-Gigabit (802.3bz - 2.5G/5G/10G)</span>
+                <span class="veille-keyword-badge">🔌 PoE+ / PoE++ (IEEE 802.3bt)</span>
+                <span class="veille-keyword-badge">🛡️ Sécurité WPA3-Enterprise (802.1X / RADIUS)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Méthodologie & Outils de Veille -->
+          <div class="veille-tools-card">
+            <h4>Méthodologie &amp; Outils de veille</h4>
+            <div class="tools-badges" id="veille-tools-list">
+              <!-- Injecté par js/main.js -->
+            </div>
+            <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:1rem; line-height:1.55;">
+              <strong>Démarche SISR :</strong> Agrégation automatisée de flux RSS via <strong>Feedly</strong>, alertes <strong>Google Alerts</strong> ciblées sur les standards <code>IEEE 802.11be</code> / <code>802.3bz</code> / <code>802.3bt</code>, et suivi régulier des blogs constructeurs (<strong>Cisco</strong>, <strong>HPE Aruba Networking</strong>, <strong>D-Link Entreprise</strong>) ainsi que des publications spécialisées réseau (<strong>Hub One</strong>).
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Grille des Articles et Sources de Veille (Cartes d'actualités) -->
+        <div class="veille-grid" id="veille-grid"></div>
+
+        <!-- 5. Synthèse / Conclusion visuelle : L'impact concret pour l'administrateur SISR -->
+        <div class="veille-synthesis-block">
+          <div class="veille-synthesis-header">
+            <div>
+              <span class="veille-theme-label" style="margin-bottom:0.25rem;">Synthèse &amp; Conclusion Technique</span>
+              <h3>L'impact concret pour l'administrateur SISR</h3>
+            </div>
+            <span class="project-cat-badge cat-reseau">Architecture LAN / WLAN Entreprise</span>
+          </div>
+
+          <div class="veille-impact-grid" id="veille-impact-grid">
+            <div class="veille-impact-card">
+              <span class="veille-impact-badge">Axe 01 // Commutation &amp; Uplink</span>
+              <h4 class="veille-impact-title">⚡ 1. Débit &amp; Commutation</h4>
+              <p class="veille-impact-desc">
+                Passage obligatoire du Gigabit classique (1 Gbps) au <strong>Multi-Gigabit (2.5G / 5G / 10G - IEEE 802.3bz)</strong> sur les ports d'accès connectant les bornes, et redimensionnement des liens <strong>Trunk / Uplink</strong> vers le cœur de réseau (25G / 40G / 100G).
+              </p>
+            </div>
+
+            <div class="veille-impact-card">
+              <span class="veille-impact-badge">Axe 02 // Alimentation &amp; Cuivre</span>
+              <h4 class="veille-impact-title">🔌 2. Énergie &amp; Câblage</h4>
+              <p class="veille-impact-desc">
+                Bascule vers le <strong>PoE++ (IEEE 802.3bt - jusqu'à 60W/90W)</strong> pour alimenter les bornes tri-bandes à pleine puissance et vérification de la certification du câblage cuivre (<strong>Cat 6A minimum recommandé</strong> pour tenir le 10 Gbps et dissiper la chaleur du PoE++).
+              </p>
+            </div>
+
+            <div class="veille-impact-card">
+              <span class="veille-impact-badge">Axe 03 // Contrôle d'accès</span>
+              <h4 class="veille-impact-title">🛡️ 3. Sécurité</h4>
+              <p class="veille-impact-desc">
+                Obligation d'utiliser le chiffrement <strong>WPA3</strong> (requis par le standard pour exploiter la bande 6 GHz) couplé à une authentification robuste <strong>802.1X / serveur RADIUS (WPA3-Enterprise)</strong> en entreprise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         G. CONTACT & COORDONNÉES OFFICIELLES DU CV
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>06 // Contact &amp; Opportunités</span>
+          </div>
+          <h2 class="section-title">Entrer en <span class="gradient-text">Contact</span></h2>
+          <p class="section-subtitle">
+            Disponible dans le secteur de Metz / Moselle (véhiculé — Permis B) pour échanger autour d'une opportunité de stage ou d'alternance en administration systèmes et réseaux.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="glass-card">
+            <h3 class="card-heading">Mes Coordonnées Directes</h3>
+            <p style="color:var(--text-secondary); font-size:0.94rem;">
+              Retrouvez ci-dessous mes coordonnées exactes ainsi que le téléchargement direct de mon CV au format PDF.
+            </p>
+
+            <div class="contact-links">
+              <a href="tel:+33665648528" class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="display:block; font-size:0.95rem;">06 65 64 85 28</strong>
+                  <span style="font-size:0.82rem; color:var(--text-muted);">Appel direct ou SMS</span>
+                </div>
+              </a>
+
+              <a href="mailto:esteban.payen57@gmail.com" class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="display:block; font-size:0.95rem;">esteban.payen57@gmail.com</strong>
+                  <span style="font-size:0.82rem; color:var(--text-muted);">Adresse e-mail principale</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="display:block; font-size:0.95rem;">18 Grand Rue, 57130 Vernéville</strong>
+                  <span style="font-size:0.82rem; color:var(--text-muted);">Secteur Metz / Moselle • Permis B</span>
+                </div>
+              </div>
+
+              <a href="assets/docs/CV-Esteban-Payen.pdf" target="_blank" rel="noopener" download="CV-Esteban-Payen.pdf" class="contact-item">
+                <div class="contact-icon" style="color:var(--accent-emerald); background:rgba(16,185,129,0.12);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="display:block; font-size:0.95rem;">Télécharger mon CV (PDF Officiel)</strong>
+                  <span style="font-size:0.82rem; color:var(--text-muted);">CV-Esteban-Payen.pdf</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact -->
+          <div class="glass-card">
+            <h3 class="card-heading">M'envoyer un message</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">NOM &amp; PRÉNOM / ENTREPRISE *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Ex: Responsable IT — Entreprise" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">ADRESSE EMAIL *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="contact@entreprise.fr" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">VOTRE MESSAGE *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Bonjour Esteban, nous souhaitons échanger au sujet de votre profil BTS SIO SISR..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                Envoyer vers esteban.payen57@gmail.com
+              </button>
+              <p class="form-feedback" id="form-feedback"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--text-primary);">Esteban PAYEN - BTS SIO SISR</strong>
+        <span style="margin-left:0.5rem;">• Lycée Robert Schuman (Metz) • 18 Grand Rue, 57130 Vernéville • © 2026–2027</span>
+      </div>
+      <div class="footer-links">
+        <a href="#accueil">Haut de page ↑</a>
+        <a href="assets/docs/Tableau-Synthese-E4-Esteban-PAYEN.html" target="_blank" rel="noopener">Tableau de synthèse</a>
+        <a href="assets/docs/CV-Esteban-Payen.pdf" target="_blank" rel="noopener" download="CV-Esteban-Payen.pdf">CV PDF</a>
+        <a href="#" data-open-legal="true">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALE DYNAMIQUE (DÉTAILS PROJETS, ATTESTATION & MENTIONS LÉGALES)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="app-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Fermer la fenêtre">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts modulaires -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
